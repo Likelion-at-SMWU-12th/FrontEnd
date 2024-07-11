@@ -5,32 +5,38 @@ import styled from "styled-components";
 let dummy = [
   {
     id: "1",
-    author: "이예지",
-    comment: "하이",
+    author: "강주은",
+    comment: "(예비) 프론트 최고 권위자",
     timestamp: "2024-06-28T12:34:56Z",
   },
   {
     id: "2",
-    author: "박상아",
-    comment: "상아언니의 세미나",
+    author: "성윤정",
+    comment: "무럭무럭 쑥쑥 자라날개오",
     timestamp: "2024-06-28T12:34:56Z",
   },
   {
     id: "3",
-    author: "이선아",
-    comment: "상아언니의 세미나",
+    author: "유동은",
+    comment: "멋쨍이 프론트 .. It’s ME",
     timestamp: "2024-06-28T12:34:56Z",
   },
   {
     id: "4",
-    author: "조성하",
-    comment: "상아언니의 세미나",
+    author: "이현정",
+    comment: "Great!",
     timestamp: "2024-06-28T12:34:56Z",
   },
   {
     id: "5",
-    author: "강주은",
-    comment: "상아언니의 세미나",
+    author: "장유빈",
+    comment: "움냠냠",
+    timestamp: "2024-06-28T12:34:56Z",
+  },
+  {
+    id: "6",
+    author: "최현서",
+    comment: "먛…",
     timestamp: "2024-06-28T12:34:56Z",
   },
 ];
