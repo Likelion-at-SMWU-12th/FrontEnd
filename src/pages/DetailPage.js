@@ -3,6 +3,28 @@ import styled from "styled-components";
 import Button from "../components/Button";
 import { useNavigate } from "react-router-dom";
 
+const DetailPage = () => {
+  const navigate = useNavigate();
+  return (
+    <Wrapper>
+      <Button txt={"방명록 작성하기"} onBtnClick={() => navigate("/write")} />
+      <DetailWrapper>
+        <DetailDiv>
+          <Author>이예지</Author>
+          <Time>2024-06-28T12:34:56Z</Time>
+          <Comment>하이</Comment>
+          <BtnLine>
+            <Button txt={"수정"} fontSize={"30px"} />
+            <Button txt={"삭제"} fontSize={"30px"} />
+          </BtnLine>
+        </DetailDiv>
+      </DetailWrapper>
+    </Wrapper>
+  );
+};
+
+export default DetailPage;
+
 const Wrapper = styled.div`
   margin-top: 20px;
 `;
@@ -40,25 +62,3 @@ const BtnLine = styled.div`
   align-items: center;
   gap: 0 20px;
 `;
-
-const DetailPage = () => {
-  const navigate = useNavigate();
-  return (
-    <Wrapper>
-      <Button txt={"방명록 작성하기"} onBtnClick={() => navigate("/write")} />
-      <DetailWrapper>
-        <DetailDiv>
-          <Author>이예지</Author>
-          <Time>2024-06-28T12:34:56Z</Time>
-          <Comment>하이</Comment>
-          <BtnLine>
-            <Button txt={"수정"} fontSize={"30px"} />
-            <Button txt={"삭제"} fontSize={"30px"} />
-          </BtnLine>
-        </DetailDiv>
-      </DetailWrapper>
-    </Wrapper>
-  );
-};
-
-export default DetailPage;

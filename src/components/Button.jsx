@@ -1,6 +1,16 @@
 import React from "react";
 import styled from "styled-components";
 
+const Button = ({ txt, onBtnClick, fontSize }) => {
+  return (
+    <ButtonBox onClick={onBtnClick} fontSize={fontSize}>
+      {txt || "버튼"}
+    </ButtonBox>
+  );
+};
+
+export default Button;
+
 const ButtonBox = styled.button`
   padding: 15px 40px;
   background-color: #2a2a2a;
@@ -14,13 +24,3 @@ const ButtonBox = styled.button`
     background-color: #f0873e;
   }
 `;
-
-const Button = ({ txt, onBtnClick, fontSize }) => {
-  return (
-    <ButtonBox onClick={onBtnClick} fontSize={fontSize}>
-      {txt || "버튼"}
-    </ButtonBox>
-  );
-};
-
-export default Button;

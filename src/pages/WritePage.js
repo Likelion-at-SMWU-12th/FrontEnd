@@ -2,6 +2,39 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import Button from "../components/Button";
 
+const WritePage = () => {
+  const [author, setAuthor] = useState("");
+  const [comment, setComment] = useState("");
+
+  const onChangeAuthor = (e) => {
+    setAuthor(e.target.value);
+  };
+  const onChangeComment = (e) => {
+    setComment(e.target.value);
+  };
+  return (
+    <Wrapper>
+      <InputTitle>이름</InputTitle>
+      <StyledInput
+        placeholder="이름을 입력해주세요."
+        value={author}
+        onChange={onChangeAuthor}
+      />
+      <InputTitle>내용</InputTitle>
+      <StyledTxtarea
+        placeholder="방명록 내용을 입력해주세요."
+        value={comment}
+        onChange={onChangeComment}
+      />
+      <BtnDiv>
+        <Button txt={"작성하기"} />
+      </BtnDiv>
+    </Wrapper>
+  );
+};
+
+export default WritePage;
+
 const Wrapper = styled.div`
   margin-top: 50px;
   //padding: 0 100px 0 0;
@@ -50,36 +83,3 @@ const BtnDiv = styled.div`
     margin-left: auto;
   }
 `;
-
-const WritePage = () => {
-  const [author, setAuthor] = useState("");
-  const [comment, setComment] = useState("");
-
-  const onChangeAuthor = (e) => {
-    setAuthor(e.target.value);
-  };
-  const onChangeComment = (e) => {
-    setComment(e.target.value);
-  };
-  return (
-    <Wrapper>
-      <InputTitle>이름</InputTitle>
-      <StyledInput
-        placeholder="이름을 입력해주세요."
-        value={author}
-        onChange={onChangeAuthor}
-      />
-      <InputTitle>내용</InputTitle>
-      <StyledTxtarea
-        placeholder="방명록 내용을 입력해주세요."
-        value={comment}
-        onChange={onChangeComment}
-      />
-      <BtnDiv>
-        <Button txt={"작성하기"} />
-      </BtnDiv>
-    </Wrapper>
-  );
-};
-
-export default WritePage;

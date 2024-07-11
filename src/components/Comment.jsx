@@ -2,40 +2,6 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
 
-const CommentBox = styled.div`
-  width: 100%;
-  height: 100px;
-  margin-bottom: 50px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
-  border-radius: 20px;
-  padding: 50px;
-  background-color: white;
-  &:hover {
-    cursor: pointer;
-    color: #f0873e;
-    box-shadow: 0 0 10px rgba(238, 110, 67, 0.727);
-    background-color: #fef5f0;
-    > span {
-      color: #ffcca8;
-    }
-  }
-`;
-const Author = styled.div`
-  font-size: 30px;
-  font-weight: 700;
-`;
-const Time = styled.span`
-  font-size: 15px;
-  color: #c8c8c8;
-  font-weight: 600;
-  margin-top: 5px;
-`;
-const CommentTxt = styled.div`
-  font-size: 20px;
-  font-weight: 600;
-  margin-top: 20px;
-`;
-
 let dummy = [
   {
     id: "1",
@@ -85,3 +51,37 @@ const Comment = () => {
 };
 
 export default Comment;
+
+const CommentBox = styled.div`
+  width: 100%;
+  height: 100px;
+  margin-bottom: 50px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+  padding: 50px;
+  background-color: white;
+  &:hover {
+    cursor: pointer;
+    color: #f0873e;
+    box-shadow: 0 0 10px rgba(238, 110, 67, 0.727);
+    background-color: #fef5f0;
+    > span {
+      color: #ffcca8;
+    }
+  }
+`;
+const Author = styled.div`
+  font-size: 30px;
+  font-weight: 700;
+`;
+const Time = styled.span`
+  font-size: 15px;
+  color: #c8c8c8;
+  font-weight: 600;
+  margin-top: 5px;
+`;
+const CommentTxt = styled.div`
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 20px;
+`;

@@ -4,17 +4,6 @@ import Comment from "../components/Comment";
 import Button from "../components/Button";
 import { useNavigate } from "react-router-dom";
 
-const Wrapper = styled.div`
-  margin-top: 20px;
-`;
-const CommentWrapper = styled.div`
-  margin-top: 50px;
-  display: grid;
-  grid-template-columns: repeat(3, 21vw);
-  justify-content: space-between;
-  padding: 0 100px 0 0;
-`;
-
 const CommentPage = () => {
   const navigate = useNavigate();
   return (
@@ -28,3 +17,14 @@ const CommentPage = () => {
 };
 
 export default CommentPage;
+
+const Wrapper = styled.div`
+  margin-top: 20px;
+`;
+const CommentWrapper = styled.div`
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 21vw);
+  justify-content: space-between;
+  padding: 0 100px 0 0;
+`;
