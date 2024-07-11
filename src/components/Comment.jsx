@@ -90,4 +90,8 @@ const CommentTxt = styled.div`
   font-size: 20px;
   font-weight: 600;
   margin-top: 20px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  word-break: break-all;
 `;
