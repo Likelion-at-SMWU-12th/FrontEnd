@@ -25,7 +25,6 @@ const Wrapper = styled.div`
   padding: 80px 100px;
   width: calc(100vw - 200px);
   background-color: #f0f0f0;
-  height: 100vh;
 `;
 const Title = styled.div`
   font-size: 50px;
